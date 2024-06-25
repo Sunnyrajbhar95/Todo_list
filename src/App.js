@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// import { useDispatch, useSelector } from "react-redux"
+import Form from "./component/Form";
+import Todos from "./component/Todos";
+import "./App.css"
 
-function App() {
+
+
+
+export default function App() {
+  // const value=useSelector((state)=>state.counter.value);
+  // console.log(value)
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="text">Todo List</div>
+      <div className="form"> 
+         <Form/>
+      </div>
+      <Todos/>
     </div>
-  );
+  )
 }
-
-export default App;
